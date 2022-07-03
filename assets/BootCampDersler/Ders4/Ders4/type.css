@@ -1,0 +1,32 @@
+
+.Form {
+    background-color:antiquewhite;
+    border:solid 2px black;
+    border-radius:4px;
+    min-width:350px;
+    min-height:150px;
+}
+
+.Empty {
+    font-family: Verdana;
+}
+
+.Error {
+    background-color:red;
+    font-family:Verdana;
+    color:white;
+}
+
+
+.Warning {
+    background-color: yellow;
+    font-family: Verdana;
+    color: black;
+}
+
+
+.Success {
+    background-color: green;
+    font-family: Verdana;
+    color: black;
+}

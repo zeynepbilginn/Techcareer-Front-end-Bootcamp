@@ -1,0 +1,49 @@
+
+<head>
+    <script src="object.js"> </script>
+</head>
+
+
+
+<html>
+
+ 
+<body onload="GenerateClassList();">
+    <input type="number" id="TxtStudentNumber" placeholder="Öðrenci Numarasý" /> <br />
+
+    <input type="text" id="TxtStudentName" placeholder="Öðrenci Adý" /> <br />
+
+    <input type="text" id="TxtStudentLastName" placeholder="Öðrenci Soyadý" /> <br />
+
+    <input type="text" id="TxtMotherName" placeholder="Anne Adý" /> <br />
+
+    <input type="text" id="TxtFatherName" placeholder="Baba Adý" /> <br />
+
+    <select id="CmbClass">
+        <option value="-1">Lütfen Sýnýf Seçin</option>
+    </select>
+    <br />
+    <input onclick="GenerateStudent();" type="button" value="Öðrenci Ekle" />
+    <br />
+    <input onclick="DisplayStudentList(); DisplayLessonsList();" type="button" value="Öðrenci Listesi" />
+
+    <br />
+    <div>
+
+        <select id="CmbStudentList">
+
+        </select>
+
+        <select  id="CmbLessons">
+
+        </select>
+
+        <input type="button" value="Ders Ekle" onclick="SetLessonToStudent();"/>
+    </div>
+
+</body>
+
+
+</html>
+
+

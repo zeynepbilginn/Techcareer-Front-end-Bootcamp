@@ -1,0 +1,26 @@
+.Message {
+    height: 20px;
+    width: 200px;
+    border: 1px solid black;
+}
+.Warning {
+    height: 20px;
+    width: 200px;
+    border: 1px solid black;
+    background-color: yellow;
+    color: black;
+}
+.Success {
+    height: 20px;
+    width: 200px;
+    border: 1px solid black;
+    background-color: green;
+    color: white;
+}
+.Error {
+    height: 20px;
+    width: 200px;
+    border: 1px solid black;
+    background-color: red;
+    color: white;
+}

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="angular.min.js" defer></script>
+    <script src="main.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Ders - 8 İndex 2 </title>
+</head>
+<body>
+    <div ng-app="TestApp" ng-controller="TestAppController">
+        <input type="text" placeholder="Ad Soyad" ng-model="Person.NameSurname"> <br>
+        <input type="email" placeholder="Mail Adresi" ng-model="Person.MailAdress"> <br>
+        <input type="text" placeholder="Kullanıcı Adı" ng-model="Person.UserName"> <br>
+        <input type="password" placeholder="Şifre" ng-model="Person.Password"> <br> 
+        <input type="password" placeholder="Şifre Tekrarı" ng-model="Person.RePassword"> <br>
+        <button ng-click="Register();">Gönder</button> <br>
+        <div ng-class="State === 3 ? 'Error' :  State === 2 ? 'Success' : 'Message' " ng-bind="ErrorMessage">
+            
+        </div>
+    </div>
+    <div>
+        <!-- Angular.js burada çalışmaz -->
+    </div>
+</body>
+</html>

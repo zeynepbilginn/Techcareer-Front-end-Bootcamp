@@ -1,0 +1,58 @@
+
+<head>
+    <script src="object.js"> </script>
+</head>
+
+<link rel="stylesheet" href="">
+
+<html>
+
+ 
+<body onload="GenerateClassList();">
+    <input type="number" id="TxtStudentNumber" placeholder="��renci Numaras�" /> <br />
+
+    <input type="text" id="TxtStudentName" placeholder="��renci Ad�" /> <br />
+
+    <input type="text" id="TxtStudentLastName" placeholder="��renci Soyad�" /> <br />
+
+    <input type="text" id="TxtMotherName" placeholder="Anne Ad�" /> <br />
+
+    <input type="text" id="TxtFatherName" placeholder="Baba Ad�" /> <br />
+
+    <select id="CmbClass">
+        <option value="-1">L�tfen S�n�f Se�in</option>
+    </select>
+    <br />
+    <input onclick="GenerateStudent();" type="button" value="��renci Ekle" />
+    <br />
+    <input onclick="DisplayStudentList(); DisplayLessonsList();" type="button" value="��renci Listesi" />
+
+    <br />
+    <div>
+
+        <select id="CmbStudentList">
+
+        </select>
+
+        <select  id="CmbLessons">
+
+        </select>
+
+        <input type="button" value="Ders Ekle" onclick="SetLessonToStudent();"/>
+    </div>
+
+    <input type="button" value="��renci Ve Ald��� Dersleri Listele" onclick="DisplayStudentAndLessonsList();"/>
+
+    <div id="DvStudentAndLessonsList">
+
+        ��renci Ve Ald��� Dersler 
+
+    </div>
+
+
+</body>
+
+
+</html>
+
+

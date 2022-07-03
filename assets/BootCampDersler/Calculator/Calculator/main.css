@@ -1,0 +1,25 @@
+
+.InputTxtResult {
+    font-family: Verdana;
+    font-size: xx-large;
+    background-color: #404f5a;
+    color: aliceblue;
+    border: solid 2px #ffd800;
+    border-radius: 10px;
+    width:100%;
+}
+
+
+
+.NumberButton {
+    padding:5px;
+    background-color:#838d7f;
+    border:solid 1px #ffd800;
+    border-radius:5px;
+    font-family:Verdana;
+    color:#000000;
+    width:100%;
+    text-align:center;
+    vertical-align:central;
+    height:50px;
+}

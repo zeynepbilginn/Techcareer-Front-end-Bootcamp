@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="angular.min.js" defer></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="myService.js" defer></script>
+    <script src="main.js" defer></script>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div ng-app="TestApp" ng-controller="TestAppController">
+        <button ng-click="alertFunc();">Göster</button>
+        <button ng-click="ToUpperCase();">To Upper Case</button>
+        <button ng-click="ToLowerCase();">To Lower Case</button>
+        <button ng-click="GetTextLength();">Get Text Length</button>
+        <button ng-click="GetVowelCount();">Get Vowel Count</button> <br>
+        <button ng-click="ShowMessage();">Show Message</button>
+        <div class="modal" id="Modal">
+            <div class="button">
+                <button ng-click="CloseModal();">X</button>
+            </div>                
+                <h1 id="ModalTitle">Title</h1>
+                <h1 id="ModalMessage">Message</h1>
+        </div><br><br>
+        <button ng-click="ShowSimpleSweetAlert();">Show Simple Sweet Alert</button>
+        <button ng-click="ShowConfirmDialog();">Show Confirm Dialog</button>
+    </div>
+</body>
+</html>

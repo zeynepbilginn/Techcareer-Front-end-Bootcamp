@@ -1,0 +1,64 @@
+<head>
+    <title>Hesap makinesi</title>
+    <link href="main.css" rel="stylesheet" />
+    <script src="main.js"></script>
+</head>
+
+
+<html>
+
+<body onload="SetElementDefaultValue('TxtResult', '0');">
+
+    <table width="20%">
+
+        <tr>
+            <td colspan="3"> <input type="text" id="TxtResult" class="InputTxtResult" placeholder="Sonuç" /> </td>
+        </tr>
+
+        <tr>
+            <td><input type="button" id="Btn1" value="1" class="NumberButton" onclick="SetElementValue('1')" /> </td>
+            <td><input type="button" id="Btn2" value="2" class="NumberButton" onclick="SetElementValue('2')" /></td>
+            <td><input type="button" id="Btn3" value="3" class="NumberButton" onclick="SetElementValue('3')" /></td>
+        </tr>
+
+        <tr>
+            <td><input type="button" id="Btn4" value="4" class="NumberButton" onclick="SetElementValue('4')" /> </td>
+            <td><input type="button" id="Btn5" value="5" class="NumberButton" onclick="SetElementValue('5')" /></td>
+            <td><input type="button" id="Btn6" value="6" class="NumberButton" onclick="SetElementValue('6')" /></td>
+        </tr>
+
+        <tr>
+            <td><input type="button" id="Btn7" value="7" class="NumberButton" onclick="SetElementValue('7')" /> </td>
+            <td><input type="button" id="Btn8" value="8" class="NumberButton" onclick="SetElementValue('8')" /></td>
+            <td><input type="button" id="Btn9" value="9" class="NumberButton" onclick="SetElementValue('9')" /></td>
+        </tr>
+
+        <tr>
+            <td><input type="button" id="Btn0" value="0" class="NumberButton" onclick="SetElementValue('0')" /> </td>
+            <td><input type="button" id="BtnPlus" value="+" class="NumberButton"  onclick="SetProcess('+')"/></td>
+            <td><input type="button" id="Btn9" value="-" class="NumberButton"  onclick="SetProcess('-')"/></td>
+        </tr>
+
+        <tr>
+            <td><input type="button" id="Btn0" value="/" class="NumberButton"  onclick="SetProcess('/')"/> </td>
+            <td><input type="button" id="BtnPlus" value="C" class="NumberButton" onclick="SetElementDefaultValue('TxtResult', '0');" /></td>
+            <td><input type="button" id="Btn9" value="*" class="NumberButton"  onclick="SetProcess('*')"/></td>
+        </tr>
+        <tr>
+            <td><input type="button" id="BtnVirgul" value="," class="NumberButton" onclick="SetElementValue(',')" /> </td>
+            <td><label id="lblIslem">iþlem</label> </td>
+
+        </tr>
+    </table>
+
+
+   
+
+</body>
+
+</html>
+
+
+
+
+

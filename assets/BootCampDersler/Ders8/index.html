@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="angular.min.js" defer></script>
+    <script src="main.js" defer></script>
+    <title>Ders - 8 </title>
+</head>
+<body>
+    <div ng-app="TestApp" ng-controller="TestAppController">
+        <input type="text" ng-model="UserName">
+        <label >
+            {{UserName}}
+        </label> <br>
+        <input type="text" ng-model="NameSurname">
+        <label>
+            {{NameSurname}}
+        </label> <br>
+        <button ng-click="ShowMyMessage();" value="Click">
+            Click
+        </button>
+    </div>
+</body>
+</html>
